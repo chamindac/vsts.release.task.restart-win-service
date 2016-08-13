@@ -1,0 +1,86 @@
+{
+  "manifestVersion": 1,
+  "id": "chamindac-vsts-release-task-restart-win-service",
+  "version": "1.0.5",
+  "name": "Restart Win Service",
+  "scopes": [ "vso.work", "vso.work_write" ],
+  "description": "Restart given windows service and any other windows service(s), that is currently running and is depending (recursively), on the given windows service.",
+  "baseUri": "https://localhost",
+  "publisher": "chamindac",
+  "public": true,
+  "icons": {
+    "default": "img/logo.png"
+  },
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "tags": [
+    "win service",
+    "service"
+  ],
+  "screenshots": [
+    {
+      "path": "img/screenshots/RestartService-AddTask.png"
+    },
+    {
+      "path": "img/screenshots/RestartService-01.png"
+    },
+    {
+      "path": "img/screenshots/RestartService-02.png"
+    }
+  ],
+  "content": {
+    "details": {
+      "path": "Docs/readme.md"
+    },
+    "license": {
+      "path": "Docs/license.txt"
+    }
+  },
+  "links": {
+    "home": {
+      "uri": "https://github.com/chamindac/vsts.release.task.restart-win-service"
+    },
+    "getstarted": {
+      "uri": "https://github.com/chamindac/vsts.release.task.restart-win-service/wiki"
+    },
+    "learn": {
+      "uri": "https://github.com/chamindac/vsts.release.task.restart-win-service/wiki"
+    },
+    "support": {
+      "uri": "https://github.com/chamindac/vsts.release.task.restart-win-service/wiki"
+    },
+    "repository": {
+      "uri": "https://github.com/chamindac/vsts.release.task.restart-win-service"
+    },
+    "issues": {
+      "uri": "https://github.com/chamindac/vsts.release.task.restart-win-service/issues"
+    }
+  },
+  "branding": {
+    "color": "rgb(220, 235, 252)",
+    "theme": "light"
+  },
+  "files": [
+    {
+      "path": "restart-win-service"
+    }
+  ],
+  "categories": [
+    "Build and release"
+  ],
+  "contributions": [
+    {
+      "id": "restart-win-service",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "type": "ms.vss-distributed-task.task",
+      "properties": {
+        "name": "restart-win-service"
+      }
+    }
+  ]
+}
